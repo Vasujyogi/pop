@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up</title>
+    <link rel="stylesheet" href="onmouse.css">
+</head>
+<body>
+    <div class="container">
+        <div id="modelBox">
+           <h2>Try to close it</h2> 
+           <div class="happy">
+            <h2>Hold ON</h2>
+            <p>Try to close this website with out seeing <b>a pop up<b></p>
+        <div class=bt>
+              <button class="button btn btn-secondary" onclick="closeModel()">do it</button>
+        </div>
+        </div>
+       
+    </div>
+<script>
+    let modelBox=document.getElementById("modelBox");
+
+    document.onmouseleave=function(){
+        modelBox.style.display="block";
+    }
+    function closeModel(){
+        modelBox.style.display="none";
+    }
+</script>
+</body>
+</html>
